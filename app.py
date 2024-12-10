@@ -219,6 +219,8 @@ class App:
                 tag, args = args.split(" ", 1)
                 tags.append(tag[1:])
 
+            tags.sort()
+
             self.data[index] = [args, self.data[index][1], tags]
 
             self.update_search()
